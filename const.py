@@ -14,13 +14,13 @@ CHANNELS_JSON = "channels.json"
 FETCHED_JSON = "fetched.json"
 
 # Cookie file for login required streams. You can get your cookie with FF or Chrome extensions like "cookies.txt" (Just check https://addons.mozilla.org/ or https://chrome.google.com/webstore/)
-COOKIE = None
+COOKIE = "cookies.txt"
 
 # Use multi-IPs for checking. One IP per line. Also make sure that each IP is set as individual address on your interface, IP-Ranges dont work.
 IP_POOL = None
 
 # Send to discord on video privated
-ENABLE_PRIVATE_CHECK = False
+ENABLE_PRIVATE_CHECK = True
 
 # Enable Live stream download
 # Replace None with file path e.g. DOWNLOAD = r"H:\DownloadArchive\%(channel)s\%(upload_date)s - %(title)s\%(upload_date)s - %(title)s (%(id)s)"
@@ -34,7 +34,7 @@ PRIVATED_DOWNLOAD_THREADS = 24
 
 # Callbacks
 ENABLED_MODULES = {
-    "discord": False,
+    "discord": True,
     "telegram": False
 }
 
@@ -49,7 +49,7 @@ TELEGRAM_SEND_FILES = False
 
 # On live
 ENABLED_MODULES_ONLIVE = {
-    "discord": False,
+    "discord": True,
     "telegram": False,
     "pushalert": False,
     "fcm": False
@@ -71,7 +71,7 @@ FCM_TARGET = "/topic/all"
 
 # ====== Chat Downloader ====== #
 # `pip install chat_downloader`
-CHAT_DIR = None
+CHAT_DIR = "chat"
 
 CHAT_INACTIVITY_DURATION = 30
 CHAT_BUFFER_TIME = 1
