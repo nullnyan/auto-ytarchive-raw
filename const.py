@@ -25,9 +25,9 @@ ENABLE_PRIVATE_CHECK = False
 # Enable Live stream download
 # Replace None with file path e.g. DOWNLOAD = r"H:\DownloadArchive\%(channel)s\%(upload_date)s - %(title)s\%(upload_date)s - %(title)s (%(id)s)"
 DOWNLOAD = r""
-MEMBER_DOWNLOAD = None
-PREMIERE_DOWNLOAD = None
-PRIVATED_DOWNLOAD = None
+MEMBER_DOWNLOAD = r""
+PREMIERE_DOWNLOAD = r""
+PRIVATED_DOWNLOAD = r""
 
 # Number of threads for pekopeko's ytarchive-raw-go
 PRIVATED_DOWNLOAD_THREADS = 24
